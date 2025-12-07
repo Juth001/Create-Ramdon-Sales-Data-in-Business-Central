@@ -3,7 +3,7 @@
   "name": "Create Test Data",
   "publisher": "Yudiana Marrero",
   "version": "25.0.0.1",
-  "brief": "Creates random sales transaction over the whole year",
+  "brief": "Creates random transactions over the whole year",
   "description": "",
   "privacyStatement": "",
   "EULA": "",
@@ -21,9 +21,9 @@
     }
   ],
   "resourceExposurePolicy": {
-    "allowDebugging": true,
-    "allowDownloadingSource": true,
-    "includeSourceInSymbolFile": true
+    "allowDebugging": false,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
   },
   "runtime": "13.0",
   "features": [
