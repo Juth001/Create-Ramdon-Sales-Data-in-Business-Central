@@ -1,0 +1,32 @@
+{
+  "id": "70042a46-41a0-47f3-9ed4-da972e3a7b6c",
+  "name": "Create Test Data",
+  "publisher": "Yudiana Marrero",
+  "version": "25.0.0.1",
+  "brief": "Creates random sales transaction over the whole year",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 85100,
+      "to": 85150
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
