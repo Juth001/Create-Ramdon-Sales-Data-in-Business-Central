@@ -76,20 +76,24 @@ report 85100 "SVT Create Random Sales Data"
                     SalesHeader."No." := NextDocNo;
                     NextDocNo := IncStr(NextDocNo);
                     SalesHeader.Insert(true);
+
                     SalesHeader.Validate("Sell-to Customer No.", Customer."No.");
                     SalesHeader.Validate("Posting Date", OrderPostingDate);
                     SalesHeader.Validate("Location Code", '');
                     SalesHeader.Modify();
+
                     SalesLine.Init();
                     SalesLine.SetHideValidationDialog(true);
                     SalesLine."Document Type" := SalesHeader."Document Type";
                     SalesLine."Document No." := SalesHeader."No.";
                     SalesLine."Line No." := 10000;
                     SalesLine.Insert(true);
+
                     SalesLine.Type := SalesLine.Type::Item;
                     SalesLine.Validate("Location Code", SalesHeader."Location Code");
                     SalesLine.Validate("No.", Item."No.");
                     SalesLine.Validate(Quantity, Random(10));
+
                     if SalesLine."Unit Price" = 0 then
                         SalesLine.Validate("Unit Price", Random(100));
                     SalesLine.Modify();

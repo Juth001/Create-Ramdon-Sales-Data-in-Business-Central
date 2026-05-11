@@ -2,12 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "BC Functional Boost",
+            "name": "MD365BC",
             "type": "al",
             "request": "launch",
             "environmentType": "Sandbox",
-            "environmentName": "MD365BC-DEV",
-            "tenant": "439099e1-8f50-45e4-aaeb-9da016e43b76",
+            "environmentName": "MD365BC",
+            "tenant": "f2f33e74-a354-433b-a33f-e62ea88b7af1",
             "breakOnError": "All",
             "breakOnRecordWrite": "None",
             "launchBrowser": true,
